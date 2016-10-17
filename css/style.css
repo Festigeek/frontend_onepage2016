@@ -546,7 +546,12 @@ figure {
 }
 
 .fh5co-section-gray {
-  background: rgba(0, 0, 0, 0.04);
+/*  background: rgba(0, 0, 0, 0.04);*/
+  background-color: #3F2E79;
+
+}
+.fh5co-section-gray p, .fh5co-section-gray h3 {
+  color:white!important;
 }
 
 .heading-section {
