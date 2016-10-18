@@ -74,15 +74,6 @@ figure {
   z-index: 9999999;
 }
 
-/* Minimizer 2 */
-.wrap-logo {
-  padding: 10px 0 !important;
-}
-
-.wrap-menu {
-  padding: 0 !important;
-}
-
 .stuck {
   position: fixed !important;
   top: 0 !important;
@@ -94,6 +85,11 @@ figure {
 }
 
 .header-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 98;
   padding: 10px 0;
   background: #3F2E79;
 }
@@ -361,27 +357,11 @@ figure {
 
 #fh5co-header-section {
   padding: 0;
-  position: fixed;
-  top: 0;
+  position: relative;
   left: 0;
   width: 100%;
   z-index: 1022;
   background: #fff;
-  /* Minimizer 2 */
-  height: 100px;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-#fh5co-header-section.wrap {
-  height: 50px;
-}
-
-.sticky-wrapper {
-  /*position: relative;
-  top: 0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;*/
 }
 
 .nav-header {
@@ -395,8 +375,7 @@ figure {
   z-index: 2;
   font-size: 22px;
   text-transform: uppercase;
-  padding: 35px 0 30px 0;
-  margin: 0;
+  margin-top: 35px;
   font-weight: 700;
   float: left;
 }
@@ -422,8 +401,7 @@ figure {
   z-index: 2;
   display: block;
   float: right;
-  /*margin-top: 15px;*/
-  padding-top: 15px;
+  margin-top: 15px;
 }
 #fh5co-menu-wrap .sf-menu a {
   padding: 1em .75em;
@@ -1497,6 +1475,26 @@ figure {
   height: 100%;
   z-index: 9999;
   background: url(../images/hourglass.svg) center no-repeat #222222;
+}
+
+/* Collapsing Navbar Styles */
+@media(min-width:768px) {
+  .navbar-default {
+    -webkit-transition: all .20s;
+    -moz-transition: all .20s;
+    transition: all .20s;
+    padding: 15px 0;
+    /* Add additional styles here for the UNCOLLAPSED state */
+  }
+  .navbar-default.affix {
+    padding: 0;
+    top: 0;
+    /* Add additional styles here for the COLLAPSED state */
+  }
+}
+
+.navbar-fixed-top {
+  top: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */

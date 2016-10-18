@@ -135,52 +135,13 @@
 		}
 	};
 
-	// Menu minimizer
-	var menuMinimizer = function() {
-		var navStatesInPixelHeight = [40,100];
-
-		var changeNavState = function(nav, newStateIndex) {
-			nav.data('state', newStateIndex).stop().animate({
-				height : navStatesInPixelHeight[newStateIndex] + 'px'
-			}, 600);
-		};
-
-		var boolToStateIndex = function(bool) {
-			return bool * 1;
-		};
-
-		var maybeChangeNavState = function(nav, condState) {
-			var navState = nav.data('state');
-			if (navState === condState) {
-				changeNavState(nav, boolToStateIndex(!navState));
-			}
-		};
-
-		$('#header_nav').data('state', 1);
-
-		$(window).scroll(function(){
-			var $nav = $('#header_nav');
-
-			if ($(document).scrollTop() > 0) {
-				maybeChangeNavState($nav, 1);
-			} else {
-				maybeChangeNavState($nav, 0);
-			}
-		});
-	}
-
-	var menuMinimizer2 = function() {
-		$(window).scroll(function() {
-		  if ($(document).scrollTop() > 50) {
-		    $('#fh5co-logo').addClass('wrap-logo');
-				$('#fh5co-menu-wrap').addClass('wrap-menu');
-				$('#fh5co-header-section').addClass('wrap');
-		  } else {
-		    $('#fh5co-logo').removeClass('wrap-logo');
-				$('#fh5co-menu-wrap').removeClass('wrap-menu');
-				$('#fh5co-header-section').removeClass('wrap');
+	var initNavBar = function() {
+		// Initialize affix and add an offset to add affix class on scroll
+		$('#mainNav').affix({
+		  offset: {
+		    top: 100
 		  }
-		});
+		})
 	}
 
 	// Document on load.
@@ -190,9 +151,8 @@
 		offcanvas();
 		mobileMenuOutsideClick();
 		contentWayPoint();
+		initNavBar();
 		//stickyBanner();
-		//menuMinimizer();
-		menuMinimizer2();
 	});
 
 
