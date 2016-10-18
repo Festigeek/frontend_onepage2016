@@ -1,17 +1,17 @@
 ;(function () {
-	
+
 	'use strict';
 
 
 
-	// iPad and iPod detection	
+	// iPad and iPod detection
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
 	};
 
 	var isiPhone = function(){
 	    return (
-			(navigator.platform.indexOf("iPhone") != -1) || 
+			(navigator.platform.indexOf("iPhone") != -1) ||
 			(navigator.platform.indexOf("iPod") != -1)
 	    );
 	};
@@ -59,7 +59,7 @@
 			} else {
 				$('body').addClass('fh5co-offcanvas');
 			}
-			
+
 
 		});
 
@@ -77,11 +77,11 @@
 				}
 			}
 
-		});	
+		});
 
 	}
 
-	
+
 
 	// Click outside of the Mobile Menu
 	var mobileMenuOutsideClick = function() {
@@ -103,7 +103,7 @@
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -116,14 +116,14 @@
 							el.removeClass('item-animate');
 						},  k * 50, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '85%' } );
 	};
-	
+
 	var stickyBanner = function() {
 		var $stickyElement = $('.sticky-banner');
 		var sticky;
@@ -133,7 +133,55 @@
 		      offset: 0
 		  })
 		}
-	}; 
+	};
+
+	// Menu minimizer
+	var menuMinimizer = function() {
+		var navStatesInPixelHeight = [40,100];
+
+		var changeNavState = function(nav, newStateIndex) {
+			nav.data('state', newStateIndex).stop().animate({
+				height : navStatesInPixelHeight[newStateIndex] + 'px'
+			}, 600);
+		};
+
+		var boolToStateIndex = function(bool) {
+			return bool * 1;
+		};
+
+		var maybeChangeNavState = function(nav, condState) {
+			var navState = nav.data('state');
+			if (navState === condState) {
+				changeNavState(nav, boolToStateIndex(!navState));
+			}
+		};
+
+		$('#header_nav').data('state', 1);
+
+		$(window).scroll(function(){
+			var $nav = $('#header_nav');
+
+			if ($(document).scrollTop() > 0) {
+				maybeChangeNavState($nav, 1);
+			} else {
+				maybeChangeNavState($nav, 0);
+			}
+		});
+	}
+
+	var menuMinimizer2 = function() {
+		$(window).scroll(function() {
+		  if ($(document).scrollTop() > 50) {
+		    $('#fh5co-logo').addClass('wrap-logo');
+				$('#fh5co-menu-wrap').addClass('wrap-menu');
+				$('#fh5co-header-section').addClass('wrap');
+		  } else {
+		    $('#fh5co-logo').removeClass('wrap-logo');
+				$('#fh5co-menu-wrap').removeClass('wrap-menu');
+				$('#fh5co-header-section').removeClass('wrap');
+		  }
+		});
+	}
 
 	// Document on load.
 	$(function(){
@@ -142,7 +190,9 @@
 		offcanvas();
 		mobileMenuOutsideClick();
 		contentWayPoint();
-		stickyBanner();
+		//stickyBanner();
+		//menuMinimizer();
+		menuMinimizer2();
 	});
 
 

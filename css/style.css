@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -72,6 +72,15 @@ figure {
   position: relative;
   margin-bottom: 0;
   z-index: 9999999;
+}
+
+/* Minimizer 2 */
+.wrap-logo {
+  padding: 10px 0 !important;
+}
+
+.wrap-menu {
+  padding: 0 !important;
 }
 
 .stuck {
@@ -352,11 +361,27 @@ figure {
 
 #fh5co-header-section {
   padding: 0;
-  position: relative;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 1022;
   background: #fff;
+  /* Minimizer 2 */
+  height: 100px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#fh5co-header-section.wrap {
+  height: 50px;
+}
+
+.sticky-wrapper {
+  /*position: relative;
+  top: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;*/
 }
 
 .nav-header {
@@ -370,7 +395,8 @@ figure {
   z-index: 2;
   font-size: 22px;
   text-transform: uppercase;
-  margin-top: 35px;
+  padding: 35px 0 30px 0;
+  margin: 0;
   font-weight: 700;
   float: left;
 }
@@ -396,7 +422,8 @@ figure {
   z-index: 2;
   display: block;
   float: right;
-  margin-top: 15px;
+  /*margin-top: 15px;*/
+  padding-top: 15px;
 }
 #fh5co-menu-wrap .sf-menu a {
   padding: 1em .75em;
