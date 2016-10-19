@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -85,6 +85,11 @@ figure {
 }
 
 .header-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 98;
   padding: 10px 0;
   background: #3F2E79;
 }
@@ -1470,6 +1475,26 @@ figure {
   height: 100%;
   z-index: 9999;
   background: url(../images/hourglass.svg) center no-repeat #222222;
+}
+
+/* Collapsing Navbar Styles */
+@media(min-width:768px) {
+  .navbar-default {
+    -webkit-transition: all .20s;
+    -moz-transition: all .20s;
+    transition: all .20s;
+    padding: 15px 0;
+    /* Add additional styles here for the UNCOLLAPSED state */
+  }
+  .navbar-default.affix {
+    padding: 0;
+    top: 0;
+    /* Add additional styles here for the COLLAPSED state */
+  }
+}
+
+.navbar-fixed-top {
+  top: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */
