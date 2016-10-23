@@ -1543,13 +1543,20 @@ line-height: normal;
 }
 
 .sectioncomite {
-  background-color: lightgrey;
-  border: 5px solid #5C46A4;
+
+  border-top: 5px solid #5C46A4;
+  border-bottom: 5px solid #5C46A4;
   padding: 30px;
 }
 
-.sectioncomite h3 {
+.sectioncomite h3, .comiteelargi h3{
   text-align: center;
   font-weight: bold;
   font-size: 1.4em;
+}
+
+.comiteelargi {
+
+  border-bottom: 5px solid #5C46A4;
+  padding: 30px;
 }
