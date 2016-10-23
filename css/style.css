@@ -419,7 +419,7 @@ figure {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
+  /* Better Font Rendering =========== */git push
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
@@ -1559,4 +1559,24 @@ line-height: normal;
 
   border-bottom: 5px solid #5C46A4;
   padding: 30px;
+}
+
+
+/*
+//Icons*/
+
+.fa-envelope:hover {
+  color: #338B23;
+}
+
+.fa-linkedin-square:hover {
+  color:#4875B4;
+}
+
+.fa-github-square:hover {
+ color:#C63D2D;
+}
+
+.fa-facebook-square:hover {
+  color: #3B5998;
 }
