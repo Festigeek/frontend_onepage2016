@@ -14,5 +14,4 @@ Simple page that has nothing special... voilà!
 
 1. Content: sponsor, a propos (check), rejoindre association (avantages, postes "ouverts", etc.), sponsors (avantages), liste des sponsors (logos), icons (font-awesome to implement)
 2. CSS: couleurs sections, ajustement bootstrap general, photo image arrière plan
-3. Other: contact form (necessary), If possible, form for new recruits with all their info
-4. Also: all the TODO tags in the html
+3. Also: all the TODO tags in the html
