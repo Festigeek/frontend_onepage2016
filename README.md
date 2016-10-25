@@ -1,9 +1,12 @@
-#Festigeek one page front-end
+# Festigeek one page front-end
 
 Simple page that has nothing special... voilà!
 
-##What has been done 
-For now, a template has been downloaded and the colors and one image has been changed, that's it.
+## What has been done
+- A template has been downloaded and the colors and one image has been changed
+- Improved navbar
+- Customized parallax background
+- Contact form (without API-KEY file ```config.mail.php```, stored in Google Drive)
 
 ![its something](http://weknowmemes.com/wp-content/uploads/2013/03/its-something-meme.png "its something")
 

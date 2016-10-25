@@ -1,3 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
 .sass-cache
+
+# Secret content
+config.mail.php
+
+# Mysteriosis
+.DS_Store
