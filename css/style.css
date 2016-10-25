@@ -582,6 +582,16 @@ figure {
   font-size: 20px;
 }
 
+.heading-section-nomargin{
+  padding-bottom: 1em;
+}
+
+.heading-section-nomargin h3 {
+  font-size: 40px;
+  font-weight: 300;
+  position: relative;
+}
+
 .feature-text h3 {
   text-transform: uppercase;
   font-size: 14px;
@@ -1557,7 +1567,7 @@ line-height: normal;
 
 .comiteelargi {
 
-  border-bottom: 5px solid #5C46A4;
+  /*border-bottom: 5px solid #5C46A4;*/
   padding: 30px;
 }
 
@@ -1579,4 +1589,9 @@ line-height: normal;
 
 .fa-facebook-square:hover {
   color: #3B5998;
+}
+
+/* Text general*/
+.txtjustify{
+  text-align:justify;
 }
