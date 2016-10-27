@@ -1596,6 +1596,7 @@ line-height: normal;
 .background1 {
   background-image: url(../images/backgroundtest1.jpg);
   background-attachment: fixed;
+  background-size: 1920px;
 }
 
 /* Text general*/
