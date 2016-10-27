@@ -1603,3 +1603,9 @@ line-height: normal;
 .txtjustify{
   text-align:justify;
 }
+
+
+.abouttitle {
+  color:#5C46A4;
+  font-weight: 200;
+}
