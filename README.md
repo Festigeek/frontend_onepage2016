@@ -1,6 +1,6 @@
 # Festigeek one page front-end
 
-Simple page that has nothing special... voilà!
+Simple page that has nothing special... voilà !
 
 ## What has been done
 - A template has been downloaded and the colors and one image has been changed
