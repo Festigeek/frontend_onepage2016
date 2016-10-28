@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Festigeek</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <meta name="description" content="Free HTML5 Template by FREEHTML5.CO"/>
     <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive"/>
     <meta name="author" content="FREEHTML5.CO"/>
@@ -93,33 +93,28 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
+                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
+                            data-target="#navigationbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" id="logofg"/></a>
+                    <a class="navbar-brand" id="logofg" href="index.html"><img src="images/logo.png" /></a>
                 </div>
 
                 <!-- TODO: Scrolling JS -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right sf-menu" id="fh5co-primary-menu">
-                        <li class="active">
-                            <a href="index.html">Accueil</a>
-                        </li>
+                <div class="collapse navbar-collapse" id="navigationbar">
+                    <ul class="nav navbar-nav sf-menu" id="fh5co-primary-menu">
+                        <li class="active"><a href="index.html">Accueil</a></li>
                         <li>
                             <a href="#" class="fh5co-sub-ddown">A propos</a>
                             <ul class="fh5co-sub-menu">
                                 <li><a href="#">L'association</a></li>
-                                <li class=""><a href="#">L'équipe</a></li>
+                                <li><a href="#">L'équipe</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#" class="fh5co-sub-ddown">LAN 2017</a>
-
-                        </li>
+                        <li><a href="#" class="fh5co-sub-ddown">LAN 2017</a></li>
                         <li><a href="about.html">Nous rejoindre</a></li>
                         <li><a href="blog.html">Devenir un Sponsor</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -182,7 +177,6 @@
                 <div class="row">
                     <div class="col-md-12 text-center heading-section">
                         <h3>A propos de l'association</h3>
-
                     </div>
                 </div>
                 <div class="row">
@@ -836,9 +830,13 @@
            </div>
     </div>
     <!-- fh5co-blog-section -->
-        <div id="contact">
+        <div id="contact" class="fg-section">
             <div class="container">
-                <h3>Contact</h3>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center heading-section-nomargin animate-box fadeInUp animated">
+                        <h3>Contact</h3>
+                    </div>
+                </div>
 
                 <div class="container">
                     <form id="contact-form" method="post" action="contact.php" role="form">

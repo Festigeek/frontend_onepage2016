@@ -135,8 +135,8 @@
 		}
 	};
 
+	// FIX NAVBAR SIZE WHEN SCROLL-DOWN
 	var initNavBar = function() {
-		// Initialize affix and add an offset to add affix class on scroll
 		$('#mainNav').affix({
 		  offset: {
 		    top: 100
@@ -144,6 +144,19 @@
 		})
 	}
 
+  // DISABLE SUPERFISH ON MOBILE VIEWPORT
+	var fixSuperfish = function() {
+		$(window).resize(function() {
+		    var viewportWidth = $(window).width();
+		    if (viewportWidth <= 768) {
+		        $("#fh5co-primary-menu").removeClass("sf-menu");
+		    } else {
+		        $("#fh5co-primary-menu").addClass("sf-menu");
+		    }
+		});
+	}
+
+	// FORM VALIDATOR
 	var formValidator = function() {
 		$('#contact-form').validator();
 
@@ -185,6 +198,7 @@
 		mobileMenuOutsideClick();
 		contentWayPoint();
 		initNavBar();
+		fixSuperfish();
 		formValidator();
 		//stickyBanner();
 	});

@@ -1775,7 +1775,26 @@ figure {
     font-weight: 200;
 }
 
-#logofg {
-   height: 50px;
+/* Espace avant titre (sections personnalisées) */
+.fg-section {
+  padding: 7em 0;
+}
 
+/* Logo FG */
+#logofg {
+   transition: none;
+   padding: 5px 15px;
+}
+
+#logofg img {
+   height: 55px;
+}
+
+/* Collapse logo on affix */
+nav.affix a.navbar-brand {
+   padding: 8px 15px !important;
+}
+
+nav.affix a img {
+   height: 40px !important;
 }
