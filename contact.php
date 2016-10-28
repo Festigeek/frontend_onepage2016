@@ -54,6 +54,7 @@ else {
   // SENDING MAIL
   $mail = new PHPMailer();
   $mail->CharSet = 'UTF-8';
+  $mail->setLanguage('fr', '/vendors/PHPMailer/lang/');
   $mail->isSMTP();
   $mail->SMTPDebug = ($debug == 2 ? 2 : 0);
   $mail->Debugoutput = 'html';
