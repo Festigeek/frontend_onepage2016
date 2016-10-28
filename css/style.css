@@ -1594,11 +1594,18 @@ line-height: normal;
 /* FESTIGEEK */
 
 .background1 {
-  background-image: url(../images/backgroundtest1.jpg);
+  background-image: url(../images/backgroundtest1_old.jpg);
   background-attachment: fixed;
+  background-size: 1920px;
 }
 
 /* Text general*/
 .txtjustify{
   text-align:justify;
+}
+
+
+.abouttitle {
+  color:#5C46A4;
+  font-weight: 200;
 }
