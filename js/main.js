@@ -145,14 +145,20 @@
 	}
 
   // DISABLE SUPERFISH ON MOBILE VIEWPORT
+	var fixClassSuperfish = function() {
+		var viewportWidth = $(window).width();
+		if (viewportWidth <= 768) {
+				$("#fh5co-primary-menu").removeClass("sf-menu");
+		} else {
+				$("#fh5co-primary-menu").addClass("sf-menu");
+		}
+	}
+
 	var fixSuperfish = function() {
+		fixClassSuperfish();
+
 		$(window).resize(function() {
-		    var viewportWidth = $(window).width();
-		    if (viewportWidth <= 768) {
-		        $("#fh5co-primary-menu").removeClass("sf-menu");
-		    } else {
-		        $("#fh5co-primary-menu").addClass("sf-menu");
-		    }
+		  fixClassSuperfish();
 		});
 
      var navMain = $("#mainNav");
@@ -204,7 +210,7 @@
 
 		    $('html, body').animate({
 		      scrollTop: $(hash).offset().top
-		    }, 800, function(){
+		    }, 1000, function(){
 		      window.location.hash = hash;
 		    });
 
