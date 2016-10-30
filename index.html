@@ -69,7 +69,7 @@
     <script src="https://use.fontawesome.com/966cd516f4.js"></script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <div id="fh5co-wrapper">
     <div id="fh5co-page">
         <div class="header-top">
@@ -106,7 +106,7 @@
                 <!-- TODO: Scrolling JS -->
                 <div class="collapse navbar-collapse" id="navigationbar">
                     <ul class="nav navbar-nav sf-menu" id="fh5co-primary-menu">
-                        <li class="active"><a href="index.html">Accueil</a></li>
+                        <li class="active"><a href="#home" data-toggle="collapse" data-target="#navigationbar">Accueil</a></li>
                         <li>
                             <a href="#" class="fh5co-sub-ddown">A propos</a>
                             <ul class="fh5co-sub-menu">
@@ -117,7 +117,7 @@
                         <li><a href="#" class="fh5co-sub-ddown">LAN 2017</a></li>
                         <li><a href="about.html">Nous rejoindre</a></li>
                         <li><a href="blog.html">Devenir un Sponsor</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact" data-toggle="collapse" data-target="#navigationbar">Contact</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -159,7 +159,7 @@
         </header> -->
 
 
-        <div class="fh5co-hero">
+        <div class="fh5co-hero" id="home">
             <div class="fh5co-overlay"></div>
             <div class="fh5co-cover text-center background1" data-stellar-background-ratio="0.5">
                 <div class="desc animate-box">

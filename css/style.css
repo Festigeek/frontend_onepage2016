@@ -1798,3 +1798,15 @@ nav.affix a.navbar-brand {
 nav.affix a img {
    height: 40px !important;
 }
+
+/* Adapt on mobile screen */
+@media screen and (max-width: 768px) {
+  #logofg {
+     transition: none;
+     padding: 8px 15px;
+  }
+
+  #logofg img {
+     height: 40px;
+  }
+}

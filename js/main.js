@@ -154,6 +154,11 @@
 		        $("#fh5co-primary-menu").addClass("sf-menu");
 		    }
 		});
+
+     var navMain = $("#mainNav");
+     navMain.on("click", "a", null, function () {
+         navMain.collapse('hide');
+     });
 	}
 
 	// FORM VALIDATOR
@@ -190,6 +195,23 @@
     })
 	}
 
+	// ADD SMOOTH SCROLLING ON NAVBAR LINKS
+	var scrollSpy = function() {
+		$("#mainNav a").on('click', function(event) {
+		  if (this.hash !== "") {
+		    event.preventDefault();
+		    var hash = this.hash;
+
+		    $('html, body').animate({
+		      scrollTop: $(hash).offset().top
+		    }, 800, function(){
+		      window.location.hash = hash;
+		    });
+
+		  }
+		});
+	}
+
 	// Document on load.
 	$(function(){
 		mainMenu();
@@ -197,11 +219,13 @@
 		offcanvas();
 		mobileMenuOutsideClick();
 		contentWayPoint();
-		initNavBar();
-		fixSuperfish();
-		formValidator();
 		//stickyBanner();
-	});
 
+		// Added by Mysteriosis
+		initNavBar(); // FIX NAVBAR SIZE WHEN SCROLL-DOWN
+		fixSuperfish(); // DISABLE SUPERFISH ON MOBILE VIEWPORT
+		formValidator(); // FORM VALIDATOR
+		scrollSpy(); // ADD SMOOTH SCROLLING ON NAVBAR LINKS
+	});
 
 }());
