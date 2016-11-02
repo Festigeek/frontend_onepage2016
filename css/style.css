@@ -1810,3 +1810,18 @@ nav.affix a img {
      height: 40px;
   }
 }
+
+.smallimg {
+    max-width:170px;
+}
+
+.col-sponsopartners{
+    text-align:center;
+    margin:7px 0 7px 0;
+}
+
+.partners-section{
+    margin-bottom:50px;
+    padding-bottom:50px;
+    border-bottom: 2px solid #ffffff;
+}
