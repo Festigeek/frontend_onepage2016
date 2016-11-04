@@ -600,7 +600,7 @@ figure {
 }
 
 .fh5co-section-gray p, .fh5co-section-gray h3 {
-    color: white !important;
+    color: white;
 }
 
 .heading-section {
@@ -1109,7 +1109,7 @@ figure {
 .fh5co-testimonial, .fh5co-team {
     position: relative;
     background: #fff;
-    padding: 4em 0;
+    padding: 2em;
     border-radius: 5px;
 }
 
@@ -1181,6 +1181,16 @@ figure {
 .fh5co-testimonial span, .fh5co-team span {
     font-style: italic;
     color: #b3b3b3;
+}
+
+.fh5co-testimonial > p {
+    color: #555555;!important
+}
+
+.fh5co-testimonial > h3 {
+    margin-top:60px;
+    font-size: 20px;
+    color: #3F2E79;
 }
 
 .fh5co-blog {
@@ -1676,6 +1686,10 @@ figure {
 
 .purpleBG {
     background-color: #3F2E79;
+}
+
+.purpleBGtxt{
+    color:white;
 }
 
 /*# sourceMappingURL=style.css.map */
