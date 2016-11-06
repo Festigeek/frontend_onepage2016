@@ -14,4 +14,4 @@ Simple page that has nothing special... voilà!
 
 1. Content: sponsor, a propos (check), rejoindre association (avantages, postes "ouverts", etc.), sponsors (avantages), liste des sponsors (logos), icons (font-awesome to implement) + **Ancres navbar pour chaque section**
 2. CSS: couleurs sections, ajustement bootstrap general, photo image arrière plan
-3. Also: all the TODO tags in the html
+3. Also: all the TODO tags in the index.html
