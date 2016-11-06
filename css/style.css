@@ -1810,7 +1810,13 @@ figure {
 
 /* Espace avant titre (sections personnalisées) */
 .fg-section {
-  padding: 4em 0;
+  padding: 7em 0;
+}
+
+@media screen and (max-width: 768px) {
+    .fg-section {
+        padding: 4em 0;
+    }
 }
 
 /* Logo FG */

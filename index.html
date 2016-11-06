@@ -6,7 +6,7 @@
 <!--[if IE 8]>
 <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html class="no-js" lang="fr"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,6 +60,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <div id="fh5co-wrapper">
     <div id="fh5co-page">
+
         <div class="header-top">
             <div class="container">
                 <div class="row">
@@ -79,7 +80,6 @@
 
         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
             <div class="container">
-
                 <div class="navbar-header">
                     <button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
                             data-target="#navigationbar">
@@ -88,10 +88,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" id="logofg" href="index.html"><img src="images/logo.png"/></a>
+                    <a class="navbar-brand" id="logofg" href="index.html"><img src="images/logo.png" alt="Logo Festigeek"/></a>
                 </div>
 
-                <!-- TODO: Scrolling JS -->
                 <div class="collapse navbar-collapse" id="navigationbar">
                     <ul class="nav navbar-nav sf-menu" id="fh5co-primary-menu">
                         <li class="active"><a href="#home" data-toggle="collapse"
@@ -123,13 +122,11 @@
                     <span><a class="btn btn-primary btn-lg" href="#about">A propos</a></span>
                 </div>
             </div>
-
         </div>
-        <!-- end:header-top -->
 
-        <div id="fh5co-feature-product" class="fh5co-section">
+        <div id="about" class="fh5co-section fg-section">
             <div class="container">
-                <div class="row" id="about">
+                <div class="row">
                     <div class="col-md-12 text-center heading-section">
                         <h3>A propos de l'association</h3>
                     </div>
@@ -221,8 +218,8 @@
         </div>
 
 
-        <div id="fh5co-feature" class="fh5co-section">
-            <div class="container" id="team">
+        <div id="team" class="fh5co-section fg-section">
+            <div class="container">
                 <div class="row animate-box">
                     <div class="col-md-12 text-center heading-section">
                         <h3>L'équipe</h3>
@@ -238,7 +235,7 @@
                     </div>
                     <div class="row animate-box ">
                         <div class="col-md-4 text-center teamitem">
-                            <img class="teampicture" src="images/team/romain_sandoz.jpg">
+                            <img class="teampicture" src="images/team/romain_sandoz.jpg" alt="Romain Sandoz">
                             <h4>Romain Sandoz</h4>
                             <div class="teamtitle">
                                 <p><strong>Président</strong></p>
@@ -250,7 +247,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 text-center teamitem">
-                            <img class="teampicture" src="images/team/anastasia_zharkova.jpg">
+                            <img class="teampicture" src="images/team/anastasia_zharkova.jpg" alt="Anastasia Zharkova">
                             <h4>Anastasia Zharkova</h4>
                             <div class="teamtitle">
                                 <p><strong>Vice Présidente / secrétaire</strong></p>
@@ -262,7 +259,7 @@
 
 
                         <div class="col-md-4 text-center teamitem">
-                            <img class="teampicture" src="images/team/daniel_aguas.jpg">
+                            <img class="teampicture" src="images/team/daniel_aguas.jpg" alt="Daniel Guerreiro">
                             <h4>Daniel Aguas Guerreiro</h4>
                             <div class="teamtitle">
                                 <p><strong>Trésorier</strong></p>
@@ -285,7 +282,7 @@
                     <div class="row animate-box">
 
                         <div class="col-md-3 text-center teamitem">
-                            <img class="teampicture" src="images/team/flavia_pittet.png">
+                            <img class="teampicture" src="images/team/flavia_pittet.png" alt="Flavia Pittet">
                             <h4>Flavia Pittet</h4>
                             <div class="teamtitle">
                                 <p><strong>Responsable communication</strong></p>
@@ -296,7 +293,7 @@
                             </div>
                         </div>
                         <div class="col-md-3 text-center teamitem">
-                            <img class="teampicture" src="images/team/pa_curty.jpg">
+                            <img class="teampicture" src="images/team/pa_curty.jpg" alt="P-Alain Curty">
                             <h4>Pierre-Alain Curty</h4>
                             <div class="teamtitle">
                                 <p><strong>Responsable développement</strong></p>
@@ -308,7 +305,7 @@
                         </div>
 
                         <div class="col-md-3 text-center teamitem">
-                            <img class="teampicture" src="images/team/samuel_darcey.jpg">
+                            <img class="teampicture" src="images/team/samuel_darcey.jpg" alt="Samuel Darcey">
                             <h4>Samuel Darcey</h4>
                             <div class="teamtitle">
                                 <p><strong>Responsable Coordination</strong></p>
@@ -320,7 +317,7 @@
                         </div>
 
                         <div class="col-md-3 text-center teamitem">
-                            <img class="teampicture" src="images/team/bastian_gardel.jpg">
+                            <img class="teampicture" src="images/team/bastian_gardel.jpg" alt="Bastian Gardel">
                             <h4>Bastian Gardel</h4>
                             <div class="teamtitle">
                                 <p><strong>Responsable Logistique</strong></p>
@@ -339,8 +336,8 @@
             </div>
         </div>
 
-        <div id="fh5co-features" class="purpleBG fh5co-section-gray">
-            <div class="container" id="events">
+        <div id="events" class="purpleBG fh5co-section-gray fg-section">
+            <div class="container">
                 <div class="row">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center heading-section-nomargin animate-box fadeInUp animated">
@@ -385,8 +382,8 @@
             </div>
         </div>
 
-        <div id="fh5co-content-section" class="fh5co-section-gray">
-            <div class="container" id="join">
+        <div id="join" class="fh5co-section-gray fg-section">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
                         <h3>Rejoindre l'association</h3>
@@ -419,7 +416,7 @@
                     <div class="col-md-4 testimonials">
                         <div class="fh5co-testimonial text-center animate-box">
                             <figure>
-                                <img src="images/dynamisme.jpg" alt="user">
+                                <img src="images/dynamisme.jpg" alt="Icone Dynamisme">
                             </figure>
                             <h3>Cadre dynamique et liberté d'action</h3>
                             <p>Chez FestiGeek, nous souhaitons travailler sur toute sorte de projets autour de l'univers
@@ -436,7 +433,7 @@
                     <div class="col-md-4">
                         <div class="fh5co-testimonial text-center animate-box">
                             <figure>
-                                <img src="images/essort.png" alt="user">
+                                <img src="images/essort.png" alt="Icone Essort">
                             </figure>
                             <h3>Un milieu en plein essort</h3>
                             <p>Le numérique est de nos jours partout autour de nous. En Suisse, nous remarquons un
@@ -451,7 +448,7 @@
                     <div class="col-md-4">
                         <div class="fh5co-testimonial text-center animate-box">
                             <figure>
-                                <img src="images/icone_pro.png" alt="user">
+                                <img src="images/icone_pro.png" alt="Icone Pro">
                             </figure>
                             <h3>Un plus sur ton CV</h3>
                             <p>Les recruteurs sont souvent sensible à ce genre d'expérience. Être actif dans notre
@@ -464,132 +461,150 @@
                 </div>
             </div>
         </div>
-        <!-- fh5co-content-section -->
 
-        <div id="fh5co-services-section">
-            <div class="container" id="sponsor">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-                        <h3>Devenir un Sponsor</h3>
-                        <p>Dans l'optique d'améliorer les services proposés lors de notre LAN party et afin de pouvoir
-                            concrétiser d'autres événements, sur le campus de la HEIG-VD et ailleurs, nous sommes
-                            toujours à la recherche de nouveaux sponsors !</p>
-                        <p>N'hésitez pas à jeter un oeil à notre brochure de sponsors et à nous contacter.</p>
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3 text-center animate-box">
-                                <a href="./files/Dossier_sponsoring_FG.pdf" target="_blank"
-                                   class="btn btn-primary btn-lg">Brochure Sponsors 2017 (PDF)</a>
-                            </div>
-                        </div>
-                    </div>
+        <div id="sponsor">
+          <div class="fg-section">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+                          <h3>Devenir un Sponsor</h3>
+                          <p>Dans l'optique d'améliorer les services proposés lors de notre LAN party et afin de pouvoir
+                              concrétiser d'autres événements, sur le campus de la HEIG-VD et ailleurs, nous sommes
+                              toujours à la recherche de nouveaux sponsors !</p>
+                          <p>N'hésitez pas à jeter un oeil à notre brochure de sponsors et à nous contacter.</p>
+                          <div class="row">
+                              <div class="col-md-6 col-md-offset-3 text-center animate-box">
+                                  <a href="./files/Dossier_sponsoring_FG.pdf" target="_blank"
+                                     class="btn btn-primary btn-lg">Brochure Sponsors 2017 (PDF)</a>
+                              </div>
+                          </div>
+                      </div>
 
-                </div>
+                  </div>
 
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center animate-box"><h3>Vos avantages en bref</h3></div>
-            </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-8 col-md-offset-2 text-center animate-box">
+                    <h3>Vos avantages en bref</h3>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row text-center">
+                      <div class="col-md-4 col-sm-4">
+                          <div class="services animate-box">
+                              <span><i class="icon-bullhorn"></i></span>
+                              <h3>Notoriété</h3>
+                              <p>Intégrer sa marque dans un univers multi‐domaines en pleine expansion en Suisse</p>
+                              <p>Améliorer la notoriété de son entreprise auprès d’un public toujours plus important</p>
+                          </div>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                          <div class="services animate-box">
+                              <span><i class="icon-bubbles4"></i></span>
+                              <h3>Visibilité</h3>
+                              <p>Assurer une visibilité de sa marque auprès des 3'000 étudiants et collaborateurs de la
+                                  HEIG‐VD</p>
+                              <p>Associer sa marque à une organisation jeune, dynamique et disposant d’un savoir‐faire
+                                  éprouvé</p>
+                          </div>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                          <div class="services animate-box">
+                              <span><i class="icon-rocket"></i></span>
+                              <h3>Contrepartie avantageuse</h3>
+                              <p>Limiter les risques en investissant un montant raisonnable pour des contreparties
+                                  favorables</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- TODO : Link to partners and sponsors websites -->
+          <div class="fh5co-section-gray fg-section">
+              <div class="container partners-section">
+                  <div class="row">
+                      <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+                          <h3>Organisations partenaires</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/partenaires/heigvd.png" alt="HEIG-VD">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/partenaires/pctop.png" alt="PC-TOP">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/partenaires/ggc.png" alt="GGC">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/partenaires/qh.jpg" alt="QH">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/partenaires/csgtv.png" alt="CSG-TV">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/partenaires/infogames.png" alt="InfoGames">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/partenaires/polylan.png" alt="PolyLAN">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners"></div>
+                  </div>
+              </div>
+              <div class="container sponsors-section">
+                  <div class="row">
+                      <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+                          <h3>Sponsors</h3>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/sponsors/heigvd.png" alt="HEIG-VD">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/sponsors/pctop.png" alt="PC-TOP">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/sponsors/adnv.png" alt="ADNV">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/sponsors/gri.png" alt="GRI">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/sponsors/masrad.png" alt="MS-RAD">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/sponsors/micro_info.png" alt="MIS">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/sponsors/ng.png" alt="Numeric Games">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/sponsors/qwertz.png" alt="QWERTZ">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/sponsors/yparc.png" alt="Y-Parc">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners">
+                        <img class="smallimg" src="./images/sponsors/yverdon.png" alt="Ville Yverdon">
+                      </div>
+                      <div class="col-xs-3 col-sponsopartners"></div>
+                      <div class="col-xs-3 col-sponsopartners"></div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div id="contact" class="fg-section">
             <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-4 col-sm-4">
-                        <div class="services animate-box">
-                            <span><i class="icon-bullhorn"></i></span>
-                            <h3>Notoriété</h3>
-                            <p>Intégrer sa marque dans un univers multi‐domaines en pleine expansion en Suisse</p>
-                            <p>Améliorer la notoriété de son entreprise auprès d’un public toujours plus important</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="services animate-box">
-                            <span><i class="icon-bubbles4"></i></span>
-                            <h3>Visibilité</h3>
-                            <p>Assurer une visibilité de sa marque auprès des 3'000 étudiants et collaborateurs de la
-                                HEIG‐VD</p>
-                            <p>Associer sa marque à une organisation jeune, dynamique et disposant d’un savoir‐faire
-                                éprouvé</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="services animate-box">
-                            <span><i class="icon-rocket"></i></span>
-                            <h3>Contrepartie avantageuse</h3>
-                            <p>Limiter les risques en investissant un montant raisonnable pour des contreparties
-                                favorables</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- END What we do -->
-
-        <!-- TODO : Link to partners and sponsors websites -->
-        <div id="fh5co-blog-section" class="fh5co-section-gray">
-            <div class="container partners-section">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-                        <h3>Organisations partenaires</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg"
-                                                                  src="./images/partenaires/heigvd.png"></div>
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg" src="./images/partenaires/pctop.png">
-                    </div>
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg" src="./images/partenaires/ggc.png">
-                    </div>
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg" src="./images/partenaires/qh.jpg">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg" src="./images/partenaires/csgtv.png">
-                    </div>
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg"
-                                                                  src="./images/partenaires/infogames.png"></div>
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg"
-                                                                  src="./images/partenaires/polylan.png"></div>
-                    <div class="col-xs-3 col-sponsopartners"></div>
-                </div>
-            </div>
-            <div class="container sponsors-section">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-                        <h3>Sponsors</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg" src="./images/sponsors/heigvd.png">
-                    </div>
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg" src="./images/sponsors/pctop.png">
-                    </div>
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg" src="./images/sponsors/adnv.png">
-                    </div>
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg" src="./images/sponsors/gri.png">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg" src="./images/sponsors/masrad.png">
-                    </div>
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg"
-                                                                  src="./images/sponsors/micro_info.png"></div>
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg" src="./images/sponsors/ng.png"></div>
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg" src="./images/sponsors/qwertz.png">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg" src="./images/sponsors/yparc.png">
-                    </div>
-                    <div class="col-xs-3 col-sponsopartners"><img class="smallimg" src="./images/sponsors/yverdon.png">
-                    </div>
-                    <div class="col-xs-3 col-sponsopartners"></div>
-                    <div class="col-xs-3 col-sponsopartners"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="fg-section">
-            <div class="container" id="contact">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center heading-section-nomargin animate-box fadeInUp animated">
                         <h3>Contact</h3>
@@ -597,12 +612,11 @@
                 </div>
 
                 <div class="container">
-                    <form id="contact-form" method="post" action="contact.php" role="form">
+                    <form id="contact-form" method="post" action="contact.php">
 
                         <div class="messages"></div>
 
                         <div class="controls">
-
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -672,42 +686,35 @@
                     </form>
                 </div>
 
-
             </div>
-
         </div>
-        <footer>
-            <div id="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <p class="fh5co-social-icons">
-                                <a href="https://twitter.com/FestiGeek" target="_blank"><i
-                                        class="icon-twitter2"></i></a>
-                                <a href="https://www.facebook.com/festigeek.yverdon/" target="_blank"><i
-                                        class="icon-facebook2"></i></a>
-                                <!--<a href="#"><i class="icon-instagram"></i></a>
-                                <a href="#"><i class="icon-dribbble2"></i></a>
-                                <a href="#"><i class="icon-youtube"></i></a>-->
-                            </p>
-                            <p>Copyright 2016 Festigeek. All Rights Reserved.</p>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
+        <footer id="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 col-md-offset-3 text-center">
+                      <p class="fh5co-social-icons">
+                          <a href="https://twitter.com/FestiGeek" target="_blank"><i
+                                  class="icon-twitter2"></i></a>
+                          <a href="https://www.facebook.com/festigeek.yverdon/" target="_blank"><i
+                                  class="icon-facebook2"></i></a>
+                          <!--<a href="#"><i class="icon-instagram"></i></a>
+                          <a href="#"><i class="icon-dribbble2"></i></a>
+                          <a href="#"><i class="icon-youtube"></i></a>-->
+                      </p>
+                      <p>Copyright 2016 Festigeek. All Rights Reserved.</p>
+                  </div>
+              </div>
+
+          </div>
         </footer>
-
 
     </div>
     <!-- END fh5co-page -->
-
 </div>
 <!-- END fh5co-wrapper -->
 
 <!-- jQuery -->
-
-
 <script src="js/jquery.min.js"></script>
 <!-- jQuery Easing -->
 <script src="js/jquery.easing.1.3.js"></script>
