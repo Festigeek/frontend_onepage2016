@@ -1810,7 +1810,7 @@ figure {
 
 /* Espace avant titre (sections personnalisées) */
 .fg-section {
-  padding: 7em 0;
+  padding: 4em 0;
 }
 
 /* Logo FG */
@@ -1858,6 +1858,3 @@ nav.affix a img {
     padding-bottom:50px;
     border-bottom: 2px solid #ffffff;
 }
-
-
-
