@@ -1111,7 +1111,9 @@ figure {
     background: #fff;
     padding: 2em;
     border-radius: 5px;
+
 }
+
 
 @media screen and (max-width: 768px) {
     .fh5co-testimonial, .fh5co-team {
@@ -1752,6 +1754,25 @@ figure {
     padding: 30px;
 }
 
+.lan2017  {
+    background-color: rgba(92, 70, 164, 0.5);
+    padding: 20px;
+
+}
+
+.lan2017 p , .lan2017 h3{
+    color:white;
+}
+
+.lan2017 h4 {
+    color:#BDBDBD;
+}
+
+
+.lan2017 a {
+    text-decoration: underline;
+    color:#BDBDBD;
+}
 /*
 //Icons*/
 
@@ -1839,3 +1860,6 @@ nav.affix a img {
     padding-bottom:50px;
     border-bottom: 2px solid #ffffff;
 }
+
+
+
