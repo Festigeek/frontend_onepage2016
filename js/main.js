@@ -181,7 +181,7 @@
                 data: $(this).serialize(),
                 success: function (data)
                 {
-										console.log(data);
+										//console.log(data);
 
                     var messageAlert = 'alert-' + data.type;
                     var messageText = data.message;
@@ -194,6 +194,8 @@
 										if(data.type == "success"){
 											$('#contact-form')[0].reset();
 										}
+										
+										grecaptcha.reset();
                 }
             });
             return false;
