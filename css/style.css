@@ -1690,6 +1690,10 @@ figure {
     background-color: #3F2E79;
 }
 
+.purpleBG .heading-section:after {
+  background-color: white;
+}
+
 .purpleBGtxt{
     color:white;
 }
@@ -1755,7 +1759,7 @@ figure {
 .lan2017  {
     background-color: rgba(92, 70, 164, 0.5);
     padding: 20px;
-
+    margin-bottom: 50px;
 }
 
 .lan2017 p , .lan2017 h3{

@@ -203,8 +203,9 @@
 
 	// ADD SMOOTH SCROLLING ON NAVBAR LINKS
 	var scrollSpy = function() {
-		$("#mainNav a").on('click', function(event) {
-		  if (this.hash !== "") {
+		$('content').scrollspy();
+		$('#mainNav a').on('click', function(event) {
+		  if (this.hash !== '') {
 		    event.preventDefault();
 		    var hash = this.hash;
 
