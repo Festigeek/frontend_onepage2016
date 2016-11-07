@@ -1868,3 +1868,10 @@ nav.affix a img {
     padding-bottom:50px;
     border-bottom: 2px solid #ffffff;
 }
+
+
+.join {
+    background-color: white !important;
+    color: #5C46A4 !important;
+    margin-bottom: 150px;
+}
