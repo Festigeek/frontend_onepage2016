@@ -1838,6 +1838,7 @@ ul.dropdown-menu li:last-child a:visited:hover {
 
 ul.open {
   display: block;
+  background-color: #f8f8f8;
 }
 
 /* Espace avant titre (sections personnalisées) */
@@ -1854,6 +1855,14 @@ ul.open {
     float: none;
   }
 
+  #fh5co-primary-menu li a {
+    font-size: 0.95em;
+  }
+
+  #fh5co-primary-menu li ul li a {
+    font-size: 0.9em;
+  }
+
   .open.dropdown-menu {
     position: static;
     float: none;
@@ -1862,6 +1871,13 @@ ul.open {
     background-color: transparent;
     border: 0;
     box-shadow: none;
+  }
+
+  .dropdown-menu .fg-divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
   }
 }
 
