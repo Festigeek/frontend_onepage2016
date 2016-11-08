@@ -2,8 +2,6 @@
 
 	'use strict';
 
-
-
 	// iPad and iPod detection
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
@@ -56,18 +54,15 @@
 
 			if ( $('body').hasClass('fh5co-offcanvas') ) {
 				$('body').removeClass('fh5co-offcanvas');
-			} else {
+			}
+      else {
 				$('body').addClass('fh5co-offcanvas');
 			}
-
-
 		});
 
 		$('#offcanvas-menu').css('height', $(window).height());
-
 		$(window).resize(function(){
 			var w = $(window);
-
 
 			$('#offcanvas-menu').css('height', w.height());
 
@@ -81,29 +76,24 @@
 
 	}
 
-
-
 	// Click outside of the Mobile Menu
 	var mobileMenuOutsideClick = function() {
 		$(document).click(function (e) {
 	    var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 	      if ( $('body').hasClass('fh5co-offcanvas') ) {
-				$('body').removeClass('fh5co-offcanvas');
-			}
+  				$('body').removeClass('fh5co-offcanvas');
+  			}
 	    }
 		});
 	};
 
-
-	// Animations
-
+	// Scrolling Animations
 	var contentWayPoint = function() {
 		var i = 0;
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -116,11 +106,8 @@
 							el.removeClass('item-animate');
 						},  k * 50, 'easeInOutExpo' );
 					});
-
 				}, 100);
-
 			}
-
 		} , { offset: '85%' } );
 	};
 
@@ -194,7 +181,7 @@
 										if(data.type == "success"){
 											$('#contact-form')[0].reset();
 										}
-										
+
 										grecaptcha.reset();
                 }
             });
@@ -206,24 +193,29 @@
 	// ADD SMOOTH SCROLLING ON NAVBAR LINKS
 	var scrollSpy = function() {
 		$('content').scrollspy();
-		$('#mainNav a').on('click', function(event) {
-		  if (this.hash !== '') {
-		    event.preventDefault();
-		    var hash = this.hash;
 
-		    $('html, body').animate({
-		      scrollTop: $(hash).offset().top
-		    }, 1000, function(){
-		      window.location.hash = hash;
-		    });
+		$('#mainNav a').bind('click', function(event) {
+      var $anchor = $(this);
+      var hash = this.hash;
+      if($($anchor.attr('href')).offset() !== undefined) {
+        event.preventDefault();
+        if(hash != '') {
+          if($(window).width() < 769)
+            $("#navigationbar").collapse('hide');
 
-		  }
+          $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500, 'easeInOutExpo', function(){
+            window.location.hash = hash;
+          });
+        }
+      }
 		});
 	}
 
 	// Document on load.
 	$(function(){
-		mainMenu();
+		//mainMenu();
 		parallax();
 		offcanvas();
 		mobileMenuOutsideClick();
@@ -231,8 +223,8 @@
 		//stickyBanner();
 
 		// Added by Mysteriosis
-		initNavBar(); // FIX NAVBAR SIZE WHEN SCROLL-DOWN
-		fixSuperfish(); // DISABLE SUPERFISH ON MOBILE VIEWPORT
+		//initNavBar(); // FIX NAVBAR SIZE WHEN SCROLL-DOWN
+		//fixSuperfish(); // DISABLE SUPERFISH ON MOBILE VIEWPORT
 		formValidator(); // FORM VALIDATOR
 		scrollSpy(); // ADD SMOOTH SCROLLING ON NAVBAR LINKS
 	});

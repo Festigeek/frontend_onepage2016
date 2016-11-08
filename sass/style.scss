@@ -1,11 +1,11 @@
 $font-primary: 'Open Sans', Arial, sans-serif;
 // Overrides
-$grid-gutter-width: 40px; 
+$grid-gutter-width: 40px;
 $border-radius-base:  4px;
 $padding-base-vertical: 14px;
 
 $brand-primary: #ff5722;
-$brand-secondary: #1fb5f6; 
+$brand-secondary: #1fb5f6;
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -58,16 +58,16 @@ $form-group-margin-bottom: 30px;
           border-radius: $radius;
 }
 @mixin flex() {
-	display: -webkit-box;      
-  	display: -moz-box;         
-  	display: -ms-flexbox;      
-  	display: -webkit-flex;     
-  	display: flex;             
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
 }
 @mixin flexwrap() {
 	flex-wrap: wrap;
-	-webkit-flex-wrap: wrap; 
-	-moz-flex-wrap: wrap; 
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
 }
 
 @font-face {
@@ -82,7 +82,7 @@ $form-group-margin-bottom: 30px;
 }
 
 @mixin icomoon() {
-	
+
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -94,10 +94,10 @@ $form-group-margin-bottom: 30px;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	
+
 }
 
-// Import 
+// Import
 @import 'bootstrap/mixins';
 @import 'bootstrap/variables';
 
@@ -106,7 +106,7 @@ $form-group-margin-bottom: 30px;
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -206,7 +206,7 @@ figure {
 			margin-right: 15px;
 			position: relative;
 			@include transition(.5s, ease-in-out);
-			
+
 			&:last-child {
 				margin-right: 0;
 			}
@@ -292,7 +292,7 @@ figure {
 		margin-top: -80px;
 		z-index: 2;
 		color: $brand-white;
-		
+
 		@media screen and (max-width: $screen-sm) {
 			padding-left: 15px;
 			padding-right: 15px;
@@ -318,7 +318,7 @@ figure {
 			letter-spacing: 1px;
 			a{
 				color: $brand-white;
-				
+
 				&:hover,&:focus{
 					color: #fff !important;
 					&.btn{
@@ -347,8 +347,8 @@ figure {
 .sf-menu ul {
 	box-shadow: none;
 	border: transparent;
-	min-width: 12em; 
-	*width: 12em; 
+	min-width: 12em;
+	*width: 12em;
 }
 
 .sf-menu a {
@@ -356,10 +356,10 @@ figure {
 	padding: .75em 1em!important;
 	font-weight: normal;
 	border-left: none;
-	border-top: none; 
+	border-top: none;
 	border-top: none;
 	text-decoration: none;
-	zoom: 1; 
+	zoom: 1;
 	font-size: 16px;
 	border-bottom: none!important;
 
@@ -371,7 +371,7 @@ figure {
 	a{
 		&:hover,&:focus{
 			color: $brand-primary;
-		} 
+		}
 	}
 }
 
@@ -385,7 +385,7 @@ figure {
 .sf-menu ul li a,
 .sf-menu ul ul li a {
 	text-transform: none;
-	padding: .20em 1em!important;	
+	padding: .20em 1em!important;
 	letter-spacing: 1px;
 	font-size: 14px!important;
 }
@@ -419,13 +419,13 @@ figure {
 	height: 0;
 	width: 0;
 	border: 5px solid transparent;
-	border-top-color: #ccc; 
+	border-top-color: #ccc;
 }
 
 .sf-arrows > li > .sf-with-ul:focus:after,
 .sf-arrows > li:hover > .sf-with-ul:after,
 .sf-arrows > .sfHover > .sf-with-ul:after {
-	border-top-color: #ccc; 
+	border-top-color: #ccc;
 }
 .sf-arrows ul .sf-with-ul:after {
 	margin-top: -5px;
@@ -448,7 +448,7 @@ figure {
 	background: $brand-white;
 }
 .nav-header{
-	
+
 	position: relative;
 	float: left;
 	width: 100%;
@@ -477,7 +477,7 @@ figure {
 			color: $brand-primary !important;
 		}
 	}
-	
+
 }
 
 #fh5co-menu-wrap {
@@ -531,7 +531,7 @@ figure {
 				}
 			}
 		}
-	}	
+	}
 }
 #fh5co-primary-menu .fh5co-sub-menu {
 	padding:10px 7px 10px;
@@ -549,9 +549,9 @@ figure {
 	> li {
 		> .fh5co-sub-menu {
 			left: 100%;
-		}	
+		}
 	}
-	
+
 }
 
 #fh5co-primary-menu .fh5co-sub-menu:before {
@@ -595,7 +595,7 @@ figure {
 	-o-box-shadow:0 5px 15px 4px rgba(0,0,0,0.09);
 	box-shadow:0 5px 15px 4px rgba(0,0,0,0.09);
 	&:before {
-		display:none;	
+		display:none;
 	}
 }
 #fh5co-primary-menu .fh5co-sub-menu a {
@@ -632,7 +632,7 @@ figure {
 	margin-bottom: 5em;
 	&:after{
 		position: absolute;
-		content: '';	
+		content: '';
 		bottom: 0;
 		left: 50%;
 		width: 100px;
@@ -710,7 +710,7 @@ figure {
 	width: 100%;
 	margin-bottom: 30px;
 	position: relative;
-	
+
 	.icon {
 		float: left;
 		text-align: center;
@@ -761,7 +761,7 @@ figure {
 	@media screen and (max-width: $screen-sm) {
 		padding: 3em 0;
 	}
-	
+
 }
 #fh5co-portfolio-list {
 	@include flexwrap;
@@ -802,15 +802,15 @@ figure {
 				z-index: 80;
 				@include transition(.5s);
 
-				background: rgba(0, 0, 0, .0);	
+				background: rgba(0, 0, 0, .0);
 
 			}
 			&:hover {
 				&:before {
-					background: rgba(0, 0, 0, .5);	
+					background: rgba(0, 0, 0, .5);
 				}
 			}
-			
+
 			.case-studies-summary {
 			   width: auto;
 			   bottom: 2em;
@@ -842,30 +842,30 @@ figure {
 		&.two-third {
 			width: 65.6%;
 			@media screen and (max-width: $screen-sm) {
-				width: 49%;	
+				width: 49%;
 			}
 			@media screen and (max-width: $screen-xs) {
-				width: 100%;	
+				width: 100%;
 			}
-		}	
+		}
 		&.one-third {
 			width: 32.3%;
 			@media screen and (max-width: $screen-sm) {
-				width: 49%;	
+				width: 49%;
 			}
 			@media screen and (max-width: $screen-xs) {
-				width: 100%;	
+				width: 100%;
 			}
 		}
 		&.one-half {
 			width: 49%;
 			@media screen and (max-width: $screen-xs) {
-				width: 100%;	
+				width: 100%;
 			}
 		}
-		
+
 	}
-	
+
 }
 
 
@@ -993,7 +993,7 @@ figure {
 				font-weight: 400!important;
 				color: rgba($brand-black,.3)
 			}
-			
+
 		}
 	}
 	.form-control {
@@ -1005,10 +1005,10 @@ figure {
 		border: none;
 		border: 1px solid rgba(0,0,0,.1);
 		font-size: 18px;
-		
+
 		font-weight: 400;
 		@include border-radius(0px);
-		
+
 		&:focus, &:active {
 			border-bottom: 1px solid rgba(0,0,0,.5);
 		}
@@ -1069,7 +1069,7 @@ figure {
 			margin-bottom: 30px;
 		}
 	}
-	> div, 
+	> div,
 	blockquote{
 		border: none;
 		margin-bottom: 20px;
@@ -1090,7 +1090,7 @@ figure {
 	margin-bottom: 60px;
 	a{
 		img{
-	
+
 			width: 100%;
 
 			&:hover{
@@ -1102,7 +1102,7 @@ figure {
 	@media screen and (max-width: $screen-sm) {
 		width: 100%;
 	}
-	
+
 
 	.blog-text {
 		margin-bottom: 30px;
@@ -1331,7 +1331,7 @@ figure {
 
 // Burger Menu
 .fh5co-nav-toggle {
- 
+
   cursor: pointer;
   text-decoration: none;
   &.active i {
@@ -1430,7 +1430,7 @@ figure {
   		top: 0px;
   		margin-top: 2em;
   	}
-  
+
 }
 
 
@@ -1460,25 +1460,25 @@ figure {
 	padding-bottom: 4em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-bottom: 2em;
-	}	
+	}
 }
 .row-top-padded-md {
 	padding-top: 4em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-top: 2em;
-	}	
+	}
 }
 .row-bottom-padded-sm {
 	padding-bottom: 2em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-bottom: 2em;
-	}	
+	}
 }
 .row-top-padded-sm {
 	padding-top: 2em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-top: 2em;
-	}	
+	}
 }
 
 .border-bottom {
@@ -1489,11 +1489,11 @@ figure {
 	line-height: 1.8;
 }
 
-.no-js #loader { 
-	display: none;  
+.no-js #loader {
+	display: none;
 }
-.js #loader { 
-	display: block; position: absolute; left: 100px; top: 0; 
+.js #loader {
+	display: block; position: absolute; left: 100px; top: 0;
 }
 .fh5co-loader {
 	position: fixed;
@@ -1504,5 +1504,3 @@ figure {
 	z-index: 9999;
 	background: url(../images/hourglass.svg) center no-repeat #222222;
 }
-
-

@@ -20,6 +20,7 @@ body {
     color: #848484;
     font-weight: 300;
     overflow-x: hidden;
+    position:relative;
 }
 
 body.fh5co-offcanvas {
@@ -280,22 +281,19 @@ figure {
 }
 
 /* Superfish Override Menu */
-.sf-menu {
+.fg-menu {
     margin: 7px 0 0 0 !important;
-}
-
-.sf-menu {
     float: right;
 }
 
-.sf-menu ul {
+.fg-menu ul {
     box-shadow: none;
     border: transparent;
     min-width: 12em;
     *width: 12em;
 }
 
-.sf-menu a {
+.fg-menu a {
     color: rgba(0, 0, 0, 0.5);
     padding: 0.75em 1em !important;
     font-weight: normal;
@@ -308,44 +306,46 @@ figure {
     border-bottom: none !important;
 }
 
-.sf-menu a:hover, .sf-menu a:focus {
+.fg-menu a:hover,
+.fg-menu-menu a:focus {
     color: #3F2E79 !important;
 }
 
-.sf-menu li.active a:hover, .sf-menu li.active a:focus {
+.fg-menu li.active a:hover,
+.fg-menu li.active a:focus {
     color: #3F2E79;
 }
 
-.sf-menu li,
-.sf-menu ul li,
-.sf-menu ul ul li,
-.sf-menu li:hover,
-.sf-menu li.sfHover {
+.fg-menu li,
+.fg-menu ul li,
+.fg-menu ul ul li,
+.fg-menu li:hover,
+.fg-menu li.sfHover {
     background: transparent;
 }
 
-.sf-menu ul li a,
-.sf-menu ul ul li a {
+.fg-menu ul li a,
+.fg-menu ul ul li a {
     text-transform: none;
-    padding: 0.2em 1em !important;
+    /*padding: 0.2em 1em !important;*/
     letter-spacing: 1px;
     font-size: 14px !important;
 }
 
-.sf-menu li:hover a,
-.sf-menu li.sfHover a,
-.sf-menu ul li:hover a,
-.sf-menu ul li.sfHover a,
-.sf-menu li.active a {
+.fg-menu li:hover a,
+.fg-menu li.sfHover a,
+.fg-menu ul li:hover a,
+.fg-menu ul li.sfHover a,
+.fg-menu li.active a {
     color: #3F2E79;
 }
 
-.sf-menu ul li:hover,
-.sf-menu ul li.sfHover {
+.fg-menu ul li:hover,
+.fg-menu ul li.sfHover {
     background: transparent;
 }
 
-.sf-menu ul li {
+.fg-menu ul li {
     background: transparent;
 }
 
@@ -438,7 +438,7 @@ figure {
     margin-top: 15px;
 }
 
-#fh5co-menu-wrap .sf-menu a {
+#fh5co-menu-wrap .fg-menu a {
     padding: 1em .75em;
 }
 
@@ -448,7 +448,7 @@ figure {
 
 #fh5co-primary-menu > li > .sf-with-ul:after {
     border: none !important;
-    font-family: 'icomoon';
+    /*font-family: 'icomoon';*/
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -465,7 +465,7 @@ figure {
     top: 50%;
     font-size: 12px;
     margin-top: -7px;
-    content: "\e922";
+    /*content: "\e922";*/
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -1808,8 +1808,36 @@ figure {
 }
 
 .abouttitle {
-    color: #5C46A4;
+    color: #5c46a4;
     font-weight: 200;
+}
+
+/* Sous-menu */
+ul.dropdown-menu li a:link,
+ul.dropdown-menu li a:visited {
+  color: #777;
+}
+
+ul.dropdown-menu li a:hover,
+ul.dropdown-menu li a:visited:hover {
+  color: #3f2e79;
+}
+
+ul.dropdown-menu li.active a:link,
+ul.dropdown-menu li.active a:visited,
+ul.dropdown-menu li.active a:hover,
+ul.dropdown-menu li.active a:hover:visited {
+  background-color: #e7e7e7;
+}
+
+ul.dropdown-menu li:last-child a:hover,
+ul.dropdown-menu li:last-child a:visited:hover {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+ul.open {
+  display: block;
 }
 
 /* Espace avant titre (sections personnalisées) */
@@ -1818,9 +1846,23 @@ figure {
 }
 
 @media screen and (max-width: 768px) {
-    .fg-section {
-        padding: 4em 0;
-    }
+  .fg-section {
+      padding: 4em 0;
+  }
+
+  .fg-menu {
+    float: none;
+  }
+
+  .open.dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
 }
 
 /* Logo FG */
@@ -1844,6 +1886,10 @@ nav.affix a img {
 
 /* Adapt on mobile screen */
 @media screen and (max-width: 768px) {
+  .affix {
+      top: 0;
+  }
+
   #logofg {
      transition: none;
      padding: 8px 15px;
@@ -1868,7 +1914,6 @@ nav.affix a img {
     padding-bottom:50px;
     border-bottom: 2px solid #ffffff;
 }
-
 
 .join {
     background-color: white !important;
