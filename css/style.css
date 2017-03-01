@@ -1682,6 +1682,17 @@ figure {
     }
 }
 
+#logo_fifa {
+    float:left; width:100px;
+}
+
+@media (max-width:768px){
+    #logo_fifa{
+        margin-bottom:10px;
+    }
+}
+
+
 .navbar-fixed-top {
     top: 45px;
 }
