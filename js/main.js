@@ -79,13 +79,11 @@
 	// Click outside of the Mobile Menu
 	var mobileMenuOutsideClick = function() {
 		$(document).click(function (e) {
-	    var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	      if ( $('body').hasClass('fh5co-offcanvas') ) {
-  				$('body').removeClass('fh5co-offcanvas');
-  			}
-	    }
-		});
+      var container = $('#navigationbar');
+      if (!container.is(e.target) && container.has(e.target).length === 0 && container.hasClass('in')) {
+        $('#mobile_button').click();
+      }
+    });
 	};
 
 	// Scrolling Animations
@@ -213,6 +211,10 @@
 		});
 	}
 
+	var pub = function() {
+		$('#myModal').modal();
+	};
+
 	// Document on load.
 	$(function(){
 		//mainMenu();
@@ -227,6 +229,7 @@
 		//fixSuperfish(); // DISABLE SUPERFISH ON MOBILE VIEWPORT
 		formValidator(); // FORM VALIDATOR
 		scrollSpy(); // ADD SMOOTH SCROLLING ON NAVBAR LINKS
+		pub();
 	});
 
 }());
