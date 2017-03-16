@@ -229,7 +229,7 @@
 		//fixSuperfish(); // DISABLE SUPERFISH ON MOBILE VIEWPORT
 		formValidator(); // FORM VALIDATOR
 		scrollSpy(); // ADD SMOOTH SCROLLING ON NAVBAR LINKS
-		pub();
+		//pub();
 	});
 
 }());
