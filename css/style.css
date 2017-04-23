@@ -456,7 +456,6 @@ figure {
     text-transform: none;
     line-height: 1;
     /* Better Font Rendering =========== */
-    git push
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: absolute;
@@ -1662,7 +1661,7 @@ figure {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url(../images/hourglass.svg) center no-repeat #222222;
+    /*background: url(../images/hourglass.svg) center no-repeat #222222;*/
 }
 
 /* Collapsing Navbar Styles */
