@@ -213,6 +213,9 @@
 
 	var pub = function() {
 		$('#myModal').modal();
+		$('.close_modal').click(function(){
+            $($(this).closest('.modal')).modal('hide');
+		});
 	};
 
 	// Document on load.
@@ -229,7 +232,7 @@
 		//fixSuperfish(); // DISABLE SUPERFISH ON MOBILE VIEWPORT
 		formValidator(); // FORM VALIDATOR
 		scrollSpy(); // ADD SMOOTH SCROLLING ON NAVBAR LINKS
-		//pub();
+		pub();
 	});
 
 }());

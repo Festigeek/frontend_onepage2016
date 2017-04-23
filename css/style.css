@@ -1902,6 +1902,30 @@ ul.open {
    height: 55px;
 }
 
+#logo_header_discord {
+    height: 15px;
+    margin-bottom: 2px;
+}
+
+#logo_footer_discord {
+  margin-bottom: 12px;
+}
+
+/* Modal Pub */
+#myModal div.modal-body {
+  text-align: justify;
+}
+
+#logo_benevoles {
+  width: 200px;
+  float: left;
+  padding: 8px;
+}
+
+#modal-copyright {
+  float: left;
+}
+
 /* Collapse logo on affix */
 nav.affix a.navbar-brand {
    padding: 8px 15px !important;
